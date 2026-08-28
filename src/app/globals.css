@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #0D182A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-16 md:py-24 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .heading-display {
+    @apply font-display font-extrabold tracking-tight;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-brand-red text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-brand-red/20 transition-all duration-300 hover:bg-brand-red-hover hover:shadow-red-glow hover:-translate-y-0.5 active:translate-y-0 text-sm md:text-base uppercase tracking-wider;
+  }
+
+  .btn-primary-lg {
+    @apply inline-flex items-center justify-center gap-3 bg-brand-red text-white font-extrabold py-4 px-10 rounded-xl shadow-xl shadow-brand-red/25 transition-all duration-300 hover:bg-brand-red-hover hover:shadow-red-glow hover:-translate-y-1 active:translate-y-0 text-base md:text-lg uppercase tracking-widest;
+  }
+
+  .text-gradient-red {
+    @apply bg-gradient-to-r from-brand-red to-red-500 bg-clip-text text-transparent;
+  }
+
+  .card-service {
+    @apply bg-white rounded-xl p-6 md:p-8 border border-slate-100 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-brand-red/20;
+  }
+}
