@@ -112,7 +112,7 @@ export default function Services() {
                   className="inline-flex w-full items-center justify-between pl-3.5 pr-1.5 py-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 border border-emerald-100 transition-colors"
                 >
                   <span className="flex items-center gap-2">
-                    <WhatsAppIcon className="w-4 h-4" variant="solid" />
+                    <WhatsAppIcon className="w-4 h-4 text-emerald-700"  />
                     <span className="text-xs font-bold uppercase tracking-wide text-emerald-800">
                       Quero este serviço
                     </span>

@@ -44,7 +44,7 @@ export default function Footer() {
                 className="w-11 h-11 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] flex items-center justify-center transition-colors"
                 aria-label="WhatsApp"
               >
-                <WhatsAppIcon className="w-5 h-5 text-white" variant="outline" />
+                <WhatsAppIcon className="w-5 h-5 text-white"  />
               </a>
               <a
                 href="tel:+556730230044"

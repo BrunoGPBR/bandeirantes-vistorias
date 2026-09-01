@@ -22,7 +22,7 @@ export default function FloatingWhatsApp() {
           <div className="flex items-start gap-3">
             <div className="relative flex-shrink-0">
               <div className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center shadow-sm">
-                <WhatsAppIcon className="w-5 h-5 text-white" variant="outline" />
+                <WhatsAppIcon className="w-5 h-5 text-white"  />
               </div>
               <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-green-400 border-2 border-white" />
             </div>
@@ -56,7 +56,7 @@ export default function FloatingWhatsApp() {
         <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping opacity-20" />
         <WhatsAppIcon
           className="w-7 h-7 sm:w-8 sm:h-8 text-white relative z-10"
-          variant="outline"
+          
         />
       </a>
     </div>

@@ -56,7 +56,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#25D366] text-white font-extrabold py-3.5 px-6 rounded-xl shadow-xl shadow-emerald-500/25 hover:bg-[#1EBE5D] hover:shadow-emerald-500/45 hover:-translate-y-0.5 transition-all active:translate-y-0 text-sm sm:text-base"
               >
-                <WhatsAppIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white" variant="outline" />
+                <WhatsAppIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white"  />
                 FALAR NO WHATSAPP
               </a>
             </div>
