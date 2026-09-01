@@ -2,20 +2,20 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Carlos Mendes",
-    initials: "CM",
+    name: "Gregório Cáceres",
+    initials: "GC",
     text: "Atendimento excelente. Fui sem agendamento e em menos de 40 minutos saí com o laudo em mãos. Equipe muito profissional e prestativa. Recomendo!",
     gradient: "from-brand-blue-500 to-brand-blue-800",
   },
   {
-    name: "Fernanda Silva",
-    initials: "FS",
+    name: "Odemir Interlagos",
+    initials: "OI",
     text: "Escolhi a Bandeirantes para a vistoria do meu carro e fui muito bem atendida. Preço justo, laudo entregue rápido e os funcionários são muito educados.",
     gradient: "from-brand-red-500 to-brand-red-700",
   },
   {
-    name: "Roberto Costa",
-    initials: "RC",
+    name: "Clayton Pepicon",
+    initials: "CP",
     text: "Faço vistoria das frotas da minha empresa aqui há mais de 2 anos. Serviço impecável, laudos de qualidade e atendimento personalizado para empresas.",
     gradient: "from-brand-blue-600 to-brand-blue-900",
   },
