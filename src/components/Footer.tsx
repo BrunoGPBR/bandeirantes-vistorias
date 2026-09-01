@@ -14,9 +14,9 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="Bandeirantes Vistorias Veicular"
-                width={360}
-                height={64}
-                className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                width={380}
+                height={80}
+                className="h-16 sm:h-20 md:h-24 w-auto object-contain"
               />
             </a>
             <p className="text-sm text-slate-400 leading-relaxed mb-6 max-w-lg">

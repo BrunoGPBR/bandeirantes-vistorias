@@ -7,14 +7,14 @@ export default function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 w-full bg-transparent border-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-20 sm:h-24 md:h-28">
           <a href="#" className="flex items-center flex-shrink-0 mr-3">
             <Image
               src="/logo.png"
               alt="Bandeirantes Vistorias Veicular"
               width={380}
               height={72}
-              className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+              className="h-14 sm:h-20 md:h-24 w-auto object-contain"
               priority
             />
           </a>

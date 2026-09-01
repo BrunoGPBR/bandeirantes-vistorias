@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="pt-16 sm:pt-20 py-10 sm:py-16 lg:py-24 lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center">
+        <div className="pt-20 sm:pt-24 md:pt-28 py-10 sm:py-16 lg:py-24 lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center">
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20">
               <Clock className="w-3.5 h-3.5 text-white/80" strokeWidth={2.2} />
