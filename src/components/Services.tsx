@@ -1,4 +1,4 @@
-import { CarForward, ShieldCheck, Paintbrush, FileCheck2, Truck, Warehouse } from "lucide-react";
+import { CarFront, ShieldCheck, Paintbrush, FileCheck, Truck, Warehouse } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 type Service = {
@@ -9,7 +9,7 @@ type Service = {
 
 const services: Service[] = [
   {
-    icon: CarForward,
+    icon: CarFront,
     title: "Vistoria de Transferência",
     description:
       "Verifica a identificação e as condições do veículo para garantir uma transferência segura e regularizada.",
@@ -27,7 +27,7 @@ const services: Service[] = [
       "Verifica se as modificações realizadas no veículo estão de acordo com as exigências legais.",
   },
   {
-    icon: FileCheck2,
+    icon: FileCheck,
     title: "Regularização",
     description:
       "Verifica o veículo para auxiliar na regularização de pendências e alterações junto aos órgãos competentes.",

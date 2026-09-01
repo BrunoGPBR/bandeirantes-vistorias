@@ -59,7 +59,7 @@ body {
   }
 
   .card-service {
-    @apply bg-white rounded-2xl p-6 md:p-7 border border-slate-100/80 shadow-card transition-all duration-400 hover:shadow-card-hover hover:-translate-y-1.5 hover:border-brand-blue-200/70;
+    @apply bg-white rounded-2xl p-6 md:p-7 border border-slate-100/80 shadow-card transition-all duration-500 hover:shadow-card-hover hover:-translate-y-1.5 hover:border-brand-blue-200/70;
   }
 
   .glass-card {
