@@ -6,7 +6,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0D182A;
+  --foreground: #111A54;
 }
 
 html {
@@ -35,18 +35,34 @@ body {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 bg-brand-red text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-brand-red/20 transition-all duration-300 hover:bg-brand-red-hover hover:shadow-red-glow hover:-translate-y-0.5 active:translate-y-0 text-sm md:text-base uppercase tracking-wider;
+    @apply inline-flex items-center justify-center gap-2 bg-brand-red text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-brand-red/20 transition-all duration-300 hover:bg-brand-red-600 hover:shadow-red-glow hover:-translate-y-0.5 active:translate-y-0 text-sm md:text-base uppercase tracking-wider;
   }
 
   .btn-primary-lg {
-    @apply inline-flex items-center justify-center gap-3 bg-brand-red text-white font-extrabold py-4 px-10 rounded-xl shadow-xl shadow-brand-red/25 transition-all duration-300 hover:bg-brand-red-hover hover:shadow-red-glow hover:-translate-y-1 active:translate-y-0 text-base md:text-lg uppercase tracking-widest;
+    @apply inline-flex items-center justify-center gap-3 bg-brand-red text-white font-extrabold py-4 px-10 rounded-2xl shadow-xl shadow-brand-red/25 transition-all duration-300 hover:bg-brand-red-600 hover:shadow-red-glow hover:-translate-y-1 active:translate-y-0 text-base md:text-lg uppercase tracking-widest;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-brand-blue-500 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-brand-blue-500/20 transition-all duration-300 hover:bg-brand-blue-600 hover:shadow-blue-glow hover:-translate-y-0.5 active:translate-y-0 text-sm md:text-base uppercase tracking-wider;
+  }
+
+  .btn-secondary-lg {
+    @apply inline-flex items-center justify-center gap-3 bg-brand-blue-500 text-white font-extrabold py-4 px-10 rounded-2xl shadow-xl shadow-brand-blue-500/25 transition-all duration-300 hover:bg-brand-blue-600 hover:shadow-blue-glow hover:-translate-y-1 active:translate-y-0 text-base md:text-lg uppercase tracking-widest;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-brand-blue-700 via-brand-blue-500 to-brand-blue-600 bg-clip-text text-transparent;
   }
 
   .text-gradient-red {
-    @apply bg-gradient-to-r from-brand-red to-red-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-brand-red-600 to-brand-pink bg-clip-text text-transparent;
   }
 
   .card-service {
-    @apply bg-white rounded-xl p-6 md:p-8 border border-slate-100 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-brand-red/20;
+    @apply bg-white rounded-2xl p-6 md:p-7 border border-slate-100/80 shadow-card transition-all duration-400 hover:shadow-card-hover hover:-translate-y-1.5 hover:border-brand-blue-200/70;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white/70 shadow-card;
   }
 }
