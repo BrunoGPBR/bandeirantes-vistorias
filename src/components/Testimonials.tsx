@@ -1,63 +1,49 @@
-import { Star, Quote } from "lucide-react";
+import { Star } from "lucide-react";
 
-type Testimonial = {
-  name: string;
-  text: string;
-  initials: string;
-  gradient: string;
-};
-
-const testimonials: Testimonial[] = [
+const testimonials = [
   {
     name: "Carlos Mendes",
     initials: "CM",
+    text: "Atendimento excelente. Fui sem agendamento e em menos de 40 minutos saí com o laudo em mãos. Equipe muito profissional e prestativa. Recomendo!",
     gradient: "from-brand-blue-500 to-brand-blue-800",
-    text: "Atendimento excelente! Fui sem agendamento e em menos de 40 minutos saí com o laudo em mãos. Equipe muito profissional e prestativa. Recomendo demais!",
   },
   {
     name: "Fernanda Silva",
     initials: "FS",
-    gradient: "from-brand-red-500 to-brand-pink",
-    text: "Escolhi a Bandeirantes para a vistoria do meu carro e fui muito bem atendida. Preço justo, laudo entregue rápido e os funcionários são muito educados. Voltarei sempre!",
+    text: "Escolhi a Bandeirantes para a vistoria do meu carro e fui muito bem atendida. Preço justo, laudo entregue rápido e os funcionários são muito educados.",
+    gradient: "from-brand-red-500 to-brand-red-700",
   },
   {
     name: "Roberto Costa",
     initials: "RC",
-    gradient: "from-brand-blue-600 via-brand-blue-700 to-brand-blue-900",
-    text: "Faço vistoria das frotas da minha empresa aqui há mais de 2 anos. Serviço impecável, laudos de qualidade e atendimento personalizado para empresas. Melhor da região!",
+    text: "Faço vistoria das frotas da minha empresa aqui há mais de 2 anos. Serviço impecável, laudos de qualidade e atendimento personalizado para empresas.",
+    gradient: "from-brand-blue-600 to-brand-blue-900",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section id="avaliacoes" className="section-padding bg-gradient-to-b from-slate-50 via-blue-50/30 to-white relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-blue-200 to-transparent" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full bg-brand-blue-100/40 blur-3xl pointer-events-none" />
-
-      <div className="container-max relative">
-        <div className="text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/80 border border-amber-200/80 mb-5">
-            <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
-            <span className="text-xs font-bold tracking-widest uppercase text-amber-700">
-              Avaliações Reais
-            </span>
-          </div>
-
-          <h2 className="heading-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">
-            AVALIAÇÕES DE QUEM JÁ <span className="text-gradient-blue">CONFIA</span>
+    <section id="avaliacoes" className="py-14 sm:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10 sm:mb-14">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-600 mb-3">
+            Prova Social
+          </p>
+          <h2 className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-brand-navy mb-6">
+            AVALIAÇÕES DE QUEM JÁ CONFIA
           </h2>
 
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-6 sm:px-8 py-4 sm:py-5 rounded-3xl bg-white border border-slate-200/70 shadow-card backdrop-blur">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
             <div className="flex items-center gap-4">
-              <div className="text-5xl md:text-6xl font-black text-gradient-blue leading-none">
+              <div className="text-4xl sm:text-5xl font-black text-gradient-blue leading-none">
                 4,9
               </div>
-              <div>
-                <div className="flex items-center gap-0.5 mb-1.5">
+              <div className="text-left">
+                <div className="flex items-center gap-0.5 mb-1">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star
                       key={i}
-                      className="w-5 h-5 md:w-6 md:h-6 text-amber-400 fill-amber-400 drop-shadow-sm"
+                      className="w-5 h-5 sm:w-5 sm:h-5 text-amber-400 fill-amber-400"
                     />
                   ))}
                 </div>
@@ -80,49 +66,45 @@ export default function Testimonials() {
                       d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
                     />
                   </svg>
-                  <span className="text-xs font-bold text-blue-600 tracking-wide uppercase">
+                  <span className="text-xs font-bold text-blue-700 tracking-wide uppercase">
                     Google
                   </span>
                 </div>
               </div>
             </div>
             <div className="hidden sm:block w-px h-14 bg-slate-200" />
-            <div className="text-sm md:text-base font-semibold text-slate-600">
-              + de <span className="font-black text-brand-navy">500</span> avaliações no Google
-            </div>
+            <p className="text-sm font-semibold text-slate-700">
+              + de <span className="font-black text-brand-navy">500</span> avaliações
+            </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 lg:gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
           {testimonials.map(({ name, text, initials, gradient }) => (
             <figure
               key={name}
-              className="relative group bg-white rounded-3xl p-6 md:p-8 border border-slate-200/70 shadow-card hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-400"
+              className="bg-white border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow"
             >
-              <Quote className="absolute top-5 right-5 w-9 h-9 text-brand-blue-100 group-hover:text-brand-blue-200 transition-colors" strokeWidth={1.5} />
-
-              <div className="flex items-center gap-1 mb-5">
+              <div className="flex items-center gap-0.5 mb-4">
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
                 ))}
               </div>
-
-              <blockquote className="text-sm md:text-[15px] text-slate-700 leading-relaxed mb-6 relative z-10">
-                &ldquo;{text}&rdquo;
+              <blockquote className="text-sm text-slate-700 leading-relaxed mb-5">
+                “{text}”
               </blockquote>
-
-              <figcaption className="flex items-center justify-between pt-5 border-t border-slate-100">
+              <figcaption className="flex items-center justify-between pt-4 border-t border-slate-100">
                 <div className="flex items-center gap-3">
                   <div
-                    className={`w-11 h-11 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-lg`}
+                    className={`w-10 h-10 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center text-white text-xs font-black shadow`}
                   >
-                    <span className="text-sm font-black text-white tracking-wide">
-                      {initials}
-                    </span>
+                    {initials}
                   </div>
                   <div>
                     <p className="text-sm font-black text-brand-navy">{name}</p>
-                    <p className="text-xs text-slate-500 font-semibold">Cliente verificado</p>
+                    <p className="text-xs text-slate-500 font-semibold">
+                      Cliente verificado
+                    </p>
                   </div>
                 </div>
                 <svg viewBox="0 0 24 24" className="w-5 h-5 text-blue-500/40">
