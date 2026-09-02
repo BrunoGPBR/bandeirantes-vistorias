@@ -68,41 +68,41 @@ const testimonials: Testimonial[] = [
 export default function Testimonials() {
   return (
     <section id="avaliacoes" className="py-14 sm:py-20 bg-gradient-to-b from-white to-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-14">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-blue-700 mb-3">
             Avaliações reais
           </p>
-          <h2 className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-brand-navy mb-5">
+          <h2 className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-brand-navy mb-5 break-words">
             AVALIAÇÕES DE QUEM JÁ CONFIA
           </h2>
 
-          <div className="inline-flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm">
-            <div className="text-left">
+          <div className="inline-flex items-center gap-4 px-4 sm:px-5 py-3.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm max-w-full w-full sm:w-auto justify-center sm:justify-start">
+            <div className="text-left min-w-0">
               <p className="text-[10px] font-black tracking-widest uppercase text-slate-500 mb-1">
                 Nota geral no Google
               </p>
-              <div className="flex items-center gap-3">
-                <span className="text-3xl sm:text-4xl font-black text-brand-navy leading-none">
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="text-3xl sm:text-4xl font-black text-brand-navy leading-none flex-shrink-0">
                   4,8
                 </span>
-                <div className="flex items-center gap-0.5">
+                <div className="flex items-center gap-0.5 flex-shrink-0">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star
                       key={i}
-                      className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400 fill-amber-400"
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400 fill-amber-400 flex-shrink-0"
                     />
                   ))}
                 </div>
-                <span className="ml-1 text-sm font-bold text-slate-600">
-                  (59)
+                <span className="text-sm font-bold text-slate-600 flex-shrink-0">
+                  (59 avaliações)
                 </span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5 lg:gap-6">
           {testimonials.map(
             ({
               name,
@@ -117,9 +117,9 @@ export default function Testimonials() {
             }) => (
               <article
                 key={name}
-                className="bg-white border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-xl transition-all"
+                className="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-xl transition-all w-full"
               >
-                <div className="flex items-start gap-3.5 mb-5">
+                <div className="flex items-start gap-3 sm:gap-3.5 mb-5">
                   <div
                     className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br ${avatarFrom} ${avatarTo} text-white text-[13px] sm:text-sm font-black flex items-center justify-center shadow flex-shrink-0 ring-2 ring-white`}
                   >
@@ -127,40 +127,40 @@ export default function Testimonials() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
-                      <h3 className="text-sm sm:text-base font-black text-brand-navy leading-tight">
+                      <h3 className="text-sm sm:text-base font-black text-brand-navy leading-tight break-words">
                         {name}
                       </h3>
                       {badge && (
                         <span
-                          className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${badgeColor}`}
+                          className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${badgeColor} flex-shrink-0`}
                         >
                           {badge}
                         </span>
                       )}
                     </div>
-                    <div className="flex items-center gap-1.5">
+                    <div className="flex items-center gap-1.5 flex-wrap">
                       {[1, 2, 3, 4, 5].map((i) => (
                         <Star
                           key={i}
-                          className="w-3.5 h-3.5 text-amber-400 fill-amber-400"
+                          className="w-3.5 h-3.5 text-amber-400 fill-amber-400 flex-shrink-0"
                         />
                       ))}
-                      <span className="ml-1 text-[11px] text-slate-500 font-medium">
+                      <span className="ml-1 text-[11px] text-slate-500 font-medium flex-shrink-0">
                         {meta}
                       </span>
                     </div>
                   </div>
                 </div>
 
-                <p className="text-sm sm:text-[15px] text-slate-700 leading-relaxed mb-4">
+                <p className="text-sm sm:text-[15px] text-slate-700 leading-relaxed mb-4 break-words">
                   “{review}”
                 </p>
 
-                <div className="relative pl-4 border-l-2 border-brand-blue-100">
+                <div className="relative pl-3 sm:pl-4 border-l-2 border-brand-blue-100">
                   <p className="text-[11px] font-black uppercase tracking-wider text-brand-blue-600 mb-1">
                     Resposta da empresa
                   </p>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed break-words">
                     {response}
                   </p>
                 </div>
