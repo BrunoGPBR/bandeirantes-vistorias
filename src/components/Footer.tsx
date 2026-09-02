@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { MapPin, Clock, Phone, Scale } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
@@ -61,15 +63,30 @@ export default function Footer() {
               Endereço
             </h3>
             <div className="flex items-start gap-3">
-              <div className="w-9 h-9 rounded-lg bg-white/[0.06] border border-white/10 flex items-center justify-center flex-shrink-0">
+              <button
+                type="button"
+                onClick={() =>
+                  window.dispatchEvent(new CustomEvent("bv:open-location-modal"))
+                }
+                className="w-9 h-9 rounded-lg bg-white/[0.06] border border-white/10 hover:bg-white/10 flex items-center justify-center flex-shrink-0 transition-colors"
+                aria-label="Abrir mapa da localização"
+              >
                 <MapPin className="w-5 h-5 text-brand-blue-300" strokeWidth={2.2} />
-              </div>
+              </button>
               <div>
-                <p className="text-sm font-bold text-white leading-snug mb-0.5">
-                  Av. Bandeirantes, 4567 - Amambaí
-                </p>
-                <p className="text-sm text-slate-400">Campo Grande / MS</p>
-                <p className="text-sm text-slate-400">CEP 79005-000</p>
+                <button
+                  type="button"
+                  onClick={() =>
+                    window.dispatchEvent(new CustomEvent("bv:open-location-modal"))
+                  }
+                  className="text-left hover:text-brand-blue-200 transition-colors"
+                >
+                  <p className="text-sm font-bold text-white leading-snug mb-0.5">
+                    Av. Bandeirantes, 900 - Amambai
+                  </p>
+                  <p className="text-sm text-slate-400">Campo Grande / MS</p>
+                  <p className="text-sm text-slate-400">CEP 79006-000</p>
+                </button>
               </div>
             </div>
           </div>

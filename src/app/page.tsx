@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import CtaBanner from "@/components/CtaBanner";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import LocationModal from "@/components/LocationModal";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       </main>
       <Footer />
       <FloatingWhatsApp />
+      <LocationModal />
     </div>
   );
 }

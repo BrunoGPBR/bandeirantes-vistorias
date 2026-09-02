@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import { CheckCircle2, Star, ShieldCheck, Gauge, Clock } from "lucide-react";
+import { CheckCircle2, Star, ShieldCheck, Gauge, Clock, MapPin } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const WHATSAPP_URL =
@@ -59,6 +61,16 @@ export default function Hero() {
                 <WhatsAppIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white"  />
                 FALAR NO WHATSAPP
               </a>
+              <button
+                type="button"
+                onClick={() =>
+                  window.dispatchEvent(new CustomEvent("bv:open-location-modal"))
+                }
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white/10 backdrop-blur border border-white/20 text-white font-bold py-3.5 px-5 rounded-xl hover:bg-white/15 hover:-translate-y-0.5 transition-all text-sm sm:text-base"
+              >
+                <MapPin className="w-5 h-5" strokeWidth={2.2} />
+                VER LOCALIZAÇÃO
+              </button>
             </div>
 
             <div className="flex flex-wrap items-center gap-5 sm:gap-7 pt-2">
@@ -78,10 +90,10 @@ export default function Hero() {
                     {[1, 2, 3, 4, 5].map((i) => (
                       <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 fill-amber-400" />
                     ))}
-                    <span className="ml-1.5 text-sm sm:text-base font-black text-white">4,9</span>
+                    <span className="ml-1.5 text-sm sm:text-base font-black text-white">4,8</span>
                   </div>
                   <p className="text-[11px] sm:text-xs text-white/65 font-semibold">
-                    +500 avaliações no Google
+                    59 avaliações no Google
                   </p>
                 </div>
               </div>

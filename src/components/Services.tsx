@@ -1,4 +1,4 @@
-import { CarFront, ShieldCheck, Paintbrush, FileCheck, Truck, Warehouse } from "lucide-react";
+import { CarFront, ShieldCheck, Paintbrush, FileCheck, Truck, Warehouse, Building2 } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 type Service = {
@@ -134,6 +134,50 @@ export default function Services() {
               </article>
             );
           })}
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 sm:mt-14">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-blue-900 via-brand-blue-800 to-brand-blue-950 border border-brand-blue-700/50 shadow-2xl shadow-brand-blue-950/20">
+          <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-brand-red-500/10 blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -left-16 w-80 h-80 rounded-full bg-brand-blue-500/15 blur-3xl pointer-events-none" />
+          <div className="relative p-6 sm:p-8 lg:p-10 lg:grid lg:grid-cols-12 lg:gap-8 lg:items-center">
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 mb-5">
+                <Building2 className="w-4 h-4 text-brand-red-400" strokeWidth={2.2} />
+                <span className="text-[11px] sm:text-xs font-black uppercase tracking-[0.18em] text-white/85">
+                  Para o seu negócio
+                </span>
+              </div>
+              <h3 className="font-display font-black text-2xl sm:text-3xl lg:text-4xl text-white leading-tight mb-4">
+                Condições especiais para{" "}
+                <span className="text-brand-red-400">lojistas</span>
+              </h3>
+              <p className="text-sm sm:text-base text-white/75 leading-relaxed mb-3 max-w-2xl">
+                Sua loja merece condições diferenciadas.
+              </p>
+              <p className="text-sm sm:text-base text-white/70 leading-relaxed mb-3 max-w-2xl">
+                Conte com valores especiais em vistorias e perícias, atendimento ágil e a segurança de um serviço realizado com responsabilidade e conformidade.
+              </p>
+              <p className="text-sm sm:text-base text-white/70 leading-relaxed mb-6 max-w-2xl">
+                Se você é lojista, fale com a Bandeirantes e consulte nossas condições exclusivas.
+              </p>
+            </div>
+            <div className="lg:col-span-5">
+              <a
+                href="https://wa.me/556730230044?text=Ol%C3%A1%21%20Sou%20lojista%20e%20tenho%20interesse%20nas%20condi%C3%A7%C3%B5es%20especiais%20para%20vistorias%20e%20per%C3%ADcias%20para%20a%20minha%20loja.%20Pode%20me%20enviar%20os%20valores%20exclusivos%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-extrabold py-4 px-6 rounded-2xl shadow-xl shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:-translate-y-0.5 transition-all text-sm sm:text-base"
+              >
+                <WhatsAppIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                CONSULTAR VALORES PARA LOJISTAS
+              </a>
+              <p className="text-[11px] sm:text-xs text-white/55 mt-3 text-center">
+                Atendimento empresarial dedicado • Resposta rápida
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
