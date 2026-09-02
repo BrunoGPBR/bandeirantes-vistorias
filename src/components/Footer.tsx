@@ -104,7 +104,7 @@ export default function Footer() {
                   <p className="text-[10px] font-bold tracking-wider text-slate-500 uppercase mb-0.5">
                     Horário
                   </p>
-                  <p className="text-sm font-bold text-white break-words">Seg a Sex: 07h30 às 17h30</p>
+                  <p className="text-sm font-bold text-white break-words">Seg a Sex: 07h30 às 18h00</p>
                   <p className="text-sm text-slate-400 break-words">Sábado: 07h30 às 12h00</p>
                 </div>
               </li>

@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
+import LocationMap from "@/components/LocationMap";
 import CtaBanner from "@/components/CtaBanner";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -19,6 +20,7 @@ export default function Home() {
         <WhyUs />
         <HowItWorks />
         <Testimonials />
+        <LocationMap />
         <CtaBanner />
       </main>
       <Footer />

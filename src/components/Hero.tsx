@@ -141,7 +141,7 @@ export default function Hero() {
                     Horário Comercial
                   </p>
                   <p className="text-sm font-bold text-brand-navy leading-snug">
-                    Seg a Sex: 07h30 às 17h30
+                    Seg a Sex: 07h30 às 18h00
                   </p>
                   <p className="text-sm font-semibold text-slate-600">
                     Sábado: 07h30 às 12h00
