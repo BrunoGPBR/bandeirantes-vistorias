@@ -78,12 +78,12 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-5 sm:gap-7 pt-1">
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2 flex-shrink-0">
-                  {[1, 2, 3, 4].map((i) => (
+                  {["BD", "L", "OL", "RC"].map((initials) => (
                     <div
-                      key={i}
+                      key={initials}
                       className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gradient-to-br from-brand-blue-500 to-brand-blue-800 border-2 border-white text-white text-[10px] sm:text-xs font-black flex items-center justify-center"
                     >
-                      {String.fromCharCode(64 + i)}
+                      {initials}
                     </div>
                   ))}
                 </div>
