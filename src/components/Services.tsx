@@ -1,4 +1,4 @@
-import { CarFront, ShieldCheck, Paintbrush, FileCheck, Truck, Warehouse, Building2 } from "lucide-react";
+import { CarFront, ShieldCheck, Paintbrush, FileCheck, Truck, Warehouse, Building2, Store, BadgeCheck, Handshake, Percent } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 type Service = {
@@ -141,43 +141,101 @@ export default function Services() {
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-blue-900 via-brand-blue-800 to-brand-blue-950 border border-brand-blue-700/50 shadow-2xl shadow-brand-blue-950/20">
           <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-brand-red-500/10 blur-3xl pointer-events-none" />
           <div className="absolute -bottom-24 -left-16 w-80 h-80 rounded-full bg-brand-blue-500/15 blur-3xl pointer-events-none" />
-          <div className="relative p-5 sm:p-8 lg:p-10 space-y-6">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 mb-5">
-                <Building2 className="w-4 h-4 text-brand-red-400 flex-shrink-0" strokeWidth={2.2} />
-                <span className="text-[11px] sm:text-xs font-black uppercase tracking-[0.18em] text-white/85">
-                  Para o seu negócio
-                </span>
+          <div className="relative p-5 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            <div className="lg:col-span-7 space-y-6 z-10">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 mb-5">
+                  <Building2 className="w-4 h-4 text-brand-red-400 flex-shrink-0" strokeWidth={2.2} />
+                  <span className="text-[11px] sm:text-xs font-black uppercase tracking-[0.18em] text-white/85">
+                    Para o seu negócio
+                  </span>
+                </div>
+                <h3 className="font-display font-black text-2xl sm:text-3xl lg:text-4xl text-white leading-tight mb-4 break-words">
+                  Condições especiais para{" "}
+                  <span className="text-brand-red-400">lojistas</span>
+                </h3>
+                <div className="space-y-3 max-w-2xl">
+                  <p className="text-sm sm:text-base text-white/80 leading-relaxed break-words font-semibold">
+                    Sua loja merece condições diferenciadas.
+                  </p>
+                  <p className="text-sm sm:text-base text-white/70 leading-relaxed break-words">
+                    Conte com valores especiais em vistorias e perícias, atendimento ágil e a segurança de um serviço realizado com responsabilidade e conformidade.
+                  </p>
+                  <p className="text-sm sm:text-base text-white/70 leading-relaxed break-words">
+                    Se você é lojista, fale com a Bandeirantes e consulte nossas condições exclusivas.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-display font-black text-2xl sm:text-3xl lg:text-4xl text-white leading-tight mb-4 break-words">
-                Condições especiais para{" "}
-                <span className="text-brand-red-400">lojistas</span>
-              </h3>
-              <div className="space-y-3 max-w-2xl">
-                <p className="text-sm sm:text-base text-white/80 leading-relaxed break-words font-semibold">
-                  Sua loja merece condições diferenciadas.
-                </p>
-                <p className="text-sm sm:text-base text-white/70 leading-relaxed break-words">
-                  Conte com valores especiais em vistorias e perícias, atendimento ágil e a segurança de um serviço realizado com responsabilidade e conformidade.
-                </p>
-                <p className="text-sm sm:text-base text-white/70 leading-relaxed break-words">
-                  Se você é lojista, fale com a Bandeirantes e consulte nossas condições exclusivas.
+              <div className="w-full max-w-md">
+                <a
+                  href="https://wa.me/556730230044?text=Ol%C3%A1%21%20Sou%20lojista%20e%20tenho%20interesse%20nas%20condi%C3%A7%C3%B5es%20especiais%20para%20vistorias%20e%20per%C3%ADcias%20para%20a%20minha%20loja.%20Pode%20me%20enviar%20os%20valores%20exclusivos%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-extrabold py-4 px-5 sm:px-6 rounded-2xl shadow-xl shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:-translate-y-0.5 transition-all text-sm sm:text-base min-h-[56px] text-center break-words"
+                >
+                  <WhatsAppIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0" />
+                  <span className="truncate">CONSULTAR VALORES PARA LOJISTAS</span>
+                </a>
+                <p className="text-[11px] sm:text-xs text-white/55 mt-3 text-center">
+                  Atendimento empresarial dedicado • Resposta rápida
                 </p>
               </div>
             </div>
-            <div className="w-full max-w-md">
-              <a
-                href="https://wa.me/556730230044?text=Ol%C3%A1%21%20Sou%20lojista%20e%20tenho%20interesse%20nas%20condi%C3%A7%C3%B5es%20especiais%20para%20vistorias%20e%20per%C3%ADcias%20para%20a%20minha%20loja.%20Pode%20me%20enviar%20os%20valores%20exclusivos%3F"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-extrabold py-4 px-5 sm:px-6 rounded-2xl shadow-xl shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:-translate-y-0.5 transition-all text-sm sm:text-base min-h-[56px] text-center break-words"
-              >
-                <WhatsAppIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0" />
-                <span className="truncate">CONSULTAR VALORES PARA LOJISTAS</span>
-              </a>
-              <p className="text-[11px] sm:text-xs text-white/55 mt-3 text-center">
-                Atendimento empresarial dedicado • Resposta rápida
-              </p>
+
+            <div className="lg:col-span-5 relative z-10">
+              <div className="relative rounded-3xl bg-white/[0.04] border border-white/10 p-6 sm:p-7 backdrop-blur-sm">
+                <div className="absolute -top-4 -left-4 w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-red-500 to-brand-red-700 text-white flex items-center justify-center shadow-lg shadow-brand-red-500/30">
+                  <Store className="w-7 h-7" strokeWidth={2.2} />
+                </div>
+
+                <div className="pt-10 space-y-4">
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-10 h-10 rounded-xl bg-brand-blue-500/20 border border-brand-blue-400/30 text-brand-blue-300 flex items-center justify-center flex-shrink-0">
+                      <Percent className="w-5 h-5" strokeWidth={2.2} />
+                    </div>
+                    <div>
+                      <p className="text-sm font-black text-white leading-tight">Valores especiais</p>
+                      <p className="text-xs text-white/60 mt-0.5">Descontos em vistorias para operações de loja</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 flex items-center justify-center flex-shrink-0">
+                      <BadgeCheck className="w-5 h-5" strokeWidth={2.2} />
+                    </div>
+                    <div>
+                      <p className="text-sm font-black text-white leading-tight">Conformidade total</p>
+                      <p className="text-xs text-white/60 mt-0.5">Laudos aceitos em todos os órgãos competentes</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-10 h-10 rounded-xl bg-amber-400/20 border border-amber-300/30 text-amber-200 flex items-center justify-center flex-shrink-0">
+                      <Handshake className="w-5 h-5" strokeWidth={2.2} />
+                    </div>
+                    <div>
+                      <p className="text-sm font-black text-white leading-tight">Atendimento dedicado</p>
+                      <p className="text-xs text-white/60 mt-0.5">Equipe preparada para demandas de lojistas</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 pt-5 border-t border-white/10 rounded-lg">
+                    <div className="flex items-center justify-between gap-3">
+                      <div>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-white/45 mb-1">
+                          Canal empresarial
+                        </p>
+                        <p className="text-lg font-black text-white">WhatsApp direto</p>
+                      </div>
+                      <div className="w-12 h-12 rounded-2xl bg-[#25D366] text-white flex items-center justify-center shadow-lg shadow-emerald-500/30 flex-shrink-0">
+                        <WhatsAppIcon className="w-6 h-6" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-brand-red-500/15 blur-3xl pointer-events-none" />
+              </div>
             </div>
           </div>
         </div>
