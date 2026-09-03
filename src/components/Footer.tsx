@@ -105,7 +105,7 @@ export default function Footer() {
                     Horário
                   </p>
                   <p className="text-sm font-bold text-white break-words">Seg a Sex: 07h30 às 18h00</p>
-                  <p className="text-sm text-slate-400 break-words">Sábado: 07h30 às 12h00</p>
+                  <p className="text-sm text-slate-400 break-words">Sábado: 08h00 às 12h00</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">

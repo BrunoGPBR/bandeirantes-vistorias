@@ -25,7 +25,7 @@ const infoCards = [
   {
     icon: Clock,
     label: "Horário de funcionamento",
-    lines: ["Seg a Sex: 07h30 às 18h00", "Sábado: 07h30 às 12h00"],
+    lines: ["Seg a Sex: 07h30 às 18h00", "Sábado: 08h00 às 12h00"],
     accent: "from-emerald-500 to-emerald-700",
   },
   {

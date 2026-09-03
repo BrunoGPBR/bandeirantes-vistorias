@@ -144,7 +144,7 @@ export default function Hero() {
                     Seg a Sex: 07h30 às 18h00
                   </p>
                   <p className="text-sm font-semibold text-slate-600">
-                    Sábado: 07h30 às 12h00
+                    Sábado: 08h00 às 12h00
                   </p>
                 </div>
               </div>

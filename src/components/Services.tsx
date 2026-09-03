@@ -152,14 +152,14 @@ export default function Services() {
                 </div>
                 <h3 className="font-display font-black text-2xl sm:text-3xl lg:text-4xl text-white leading-tight mb-4 break-words">
                   Condições especiais para{" "}
-                  <span className="text-brand-red-400">lojistas</span>
+                  <span className="text-brand-red-400">lojistas e concessionárias</span>
                 </h3>
                 <div className="space-y-3 max-w-2xl">
                   <p className="text-sm sm:text-base text-white/80 leading-relaxed break-words font-semibold">
                     Sua loja merece condições diferenciadas.
                   </p>
                   <p className="text-sm sm:text-base text-white/70 leading-relaxed break-words">
-                    Conte com valores especiais em vistorias e perícias, atendimento ágil e a segurança de um serviço realizado com responsabilidade e conformidade.
+                    Conte com os nossos benefícios exclusivos em vistorias e perícias, atendimento ágil e a segurança de um serviço realizado com responsabilidade e conformidade.
                   </p>
                   <p className="text-sm sm:text-base text-white/70 leading-relaxed break-words">
                     Se você é lojista, fale com a Bandeirantes e consulte nossas condições exclusivas.
@@ -168,13 +168,13 @@ export default function Services() {
               </div>
               <div className="w-full max-w-md">
                 <a
-                  href="https://wa.me/556730230044?text=Ol%C3%A1%21%20Sou%20lojista%20e%20tenho%20interesse%20nas%20condi%C3%A7%C3%B5es%20especiais%20para%20vistorias%20e%20per%C3%ADcias%20para%20a%20minha%20loja.%20Pode%20me%20enviar%20os%20valores%20exclusivos%3F"
+                  href="https://wa.me/556730230044?text=Ol%C3%A1%21%20Tenho%20interesse%20nas%20condi%C3%A7%C3%B5es%20exclusivas%20para%20empresas%2C%20lojistas%20e%20concession%C3%A1rias%20em%20vistorias%20e%20per%C3%ADcias%20da%20Bandeirantes.%20Pode%20me%20enviar%20os%20benef%C3%ADcios%20e%20valores%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-extrabold py-4 px-5 sm:px-6 rounded-2xl shadow-xl shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:-translate-y-0.5 transition-all text-sm sm:text-base min-h-[56px] text-center break-words"
                 >
                   <WhatsAppIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white flex-shrink-0" />
-                  <span className="truncate">CONSULTAR VALORES PARA LOJISTAS</span>
+                  <span className="truncate">CONSULTAR CONDIÇÕES PARA EMPRESAS</span>
                 </a>
                 <p className="text-[11px] sm:text-xs text-white/55 mt-3 text-center">
                   Atendimento empresarial dedicado • Resposta rápida
