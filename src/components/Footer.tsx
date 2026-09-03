@@ -22,7 +22,7 @@ export default function Footer() {
               />
             </a>
             <p className="text-sm text-slate-400 leading-relaxed mb-5 max-w-lg break-words">
-              Há mais de 10 anos oferecendo serviços de vistoria veicular com rapidez,
+              Há 4 anos oferecendo serviços de vistoria veicular com rapidez,
               segurança e profissionalismo. Milhares de laudos emitidos para clientes satisfeitos em Campo Grande e região.
             </p>
 
