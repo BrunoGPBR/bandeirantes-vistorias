@@ -50,6 +50,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/faviconbandeirantes.png", type: "image/png" },
+    ],
+    shortcut: ["/faviconbandeirantes.png"],
+    apple: [
+      { url: "/faviconbandeirantes.png", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -59,6 +68,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" type="image/png" href="/faviconbandeirantes.png" />
+        <link rel="shortcut icon" type="image/png" href="/faviconbandeirantes.png" />
+        <link rel="apple-touch-icon" type="image/png" href="/faviconbandeirantes.png" />
+      </head>
       <body className="antialiased scroll-smooth">{children}</body>
     </html>
   );
